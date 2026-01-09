@@ -12,7 +12,7 @@
 
 _Understanding distributed systems by building real infrastructure, not CRUD apps._
 
-[Architecture](docs/architecture.md) • [API Reference](docs/api_reference.md) • [Setup Guide](docs/setup.md)
+[Architecture](docs/ARCHITECTURE.md) • [Roadmap](docs/ROADMAP.md) • [Constraints](docs/CONSTRAINTS.md)
 
 </div>
 
@@ -101,7 +101,7 @@ This system follows **Clean Architecture** principles with explicit separation o
 4. **Dependencies point inward** - Domain knows nothing about Rails
 5. **Tests provide guarantees** - Not chores, but system contracts
 
-For detailed architecture, see [`docs/architecture.md`](docs/architecture.md).
+For detailed architecture, see [`docs/architecture.md`](docs/ARCHITECTURE.md).
 
 ---
 
@@ -236,7 +236,7 @@ Building this system teaches real distributed systems concepts used at companies
 
 **Goal:** True distributed system with multiple services
 
-For detailed milestones, see [`docs/roadmap.md`](docs/roadmap.md).
+For detailed milestones, see [`docs/ROADMAP.md`](docs/roadmap.md).
 
 ---
 
@@ -244,7 +244,7 @@ For detailed milestones, see [`docs/roadmap.md`](docs/roadmap.md).
 
 | Layer | Technology | Why |
 |-------|------------|-----|
-| **Backend** | Ruby on Rails 7.1+ (API-only) | Battle-tested, excellent ecosystem |
+| **Backend** | Ruby on Rails 8.0+ (API-only) | Battle-tested, excellent ecosystem |
 | **Database** | PostgreSQL 14+ | ACID guarantees, JSON support, reliability |
 | **Cache/Queue** | Redis 7+ | In-memory performance, Sidekiq backend |
 | **Background Jobs** | Sidekiq | Industry standard, Redis-backed |
@@ -261,8 +261,8 @@ For detailed milestones, see [`docs/roadmap.md`](docs/roadmap.md).
 
 ### Prerequisites
 
-- Ruby 3.2+
-- Rails 7.1+
+- Ruby 3.4+
+- Rails 8.0+
 - PostgreSQL 14+
 - Redis 7+
 - Docker & Docker Compose (recommended)
@@ -271,8 +271,8 @@ For detailed milestones, see [`docs/roadmap.md`](docs/roadmap.md).
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/task-notification-system.git
-cd task-notification-system
+git clone https://github.com/adewunmi97/distributed_task_system.git
+cd distributed_task_system
 
 # Set up environment
 cp .env.example .env
@@ -322,11 +322,9 @@ curl -X POST http://localhost:3000/api/v1/tasks \
 
 ## 📖 Documentation
 
-- **[Architecture Overview](docs/architecture.md)** - Deep dive into system design, trade-offs
-- **[API Reference](docs/api_reference.md)** - Complete API documentation
-- **[Setup Guide](docs/setup.md)** - Step-by-step installation and configuration
-- **[Database Schema](docs/database_schema.md)** - Tables, indexes, constraints explained
-- **[Testing Strategy](docs/testing.md)** - How to write and run tests
+- **[Architecture Overview](docs/ARCHITECTURE.md)** - Deep dive into system design, trade-offs
+- **[ROADMAP](docs/ROADMAP.md)** - Complete API documentation
+- **[CONSTRAINTS](docs/CONSTRAINTS.md)** - Step-by-step installation and configuration
 
 ---
 
@@ -367,6 +365,7 @@ bundle exec rspec --format documentation
 **users**
 - `id` (PK)
 - `email` (unique, indexed)
+- `name` (text)
 - `encrypted_password`
 - `role` (enum: admin, manager, member)
 - `created_at`, `updated_at`
@@ -393,8 +392,6 @@ bundle exec rspec --format documentation
 - Enums enforce valid states (database constraints)
 - JSONB for flexible event payloads
 - Timestamps for audit trails
-
-See [`docs/database_schema.md`](docs/database_schema.md) for complete schema with rationale.
 
 ---
 
@@ -540,6 +537,6 @@ Licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 _"Whatever you do, work at it with all your heart, as working for the Lord." - Colossians 3:23_
 
-[⬆ Back to Top](#distributed-task--notification-system)
+[⬆ Back to Top](#distributed-task-system)
 
 </div>
