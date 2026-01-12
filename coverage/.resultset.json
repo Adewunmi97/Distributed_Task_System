@@ -1,0 +1,190 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/home/adewunmi97/documents/rails_projects/Distributed_Task_System/app/models/event_record.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          3,
+          3,
+          2,
+          2,
+          null,
+          null,
+          1,
+          2,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          2,
+          null,
+          null,
+          1,
+          2,
+          null
+        ]
+      },
+      "/home/adewunmi97/documents/rails_projects/Distributed_Task_System/app/models/application_record.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
+      },
+      "/home/adewunmi97/documents/rails_projects/Distributed_Task_System/app/models/task_record.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          3,
+          3,
+          2,
+          3,
+          3,
+          null,
+          null,
+          1,
+          0,
+          null,
+          null,
+          1,
+          0,
+          null,
+          null,
+          1,
+          0,
+          null,
+          null,
+          1,
+          null,
+          1,
+          null,
+          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/home/adewunmi97/documents/rails_projects/Distributed_Task_System/app/models/user_record.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          50,
+          1,
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
+          5,
+          null,
+          null,
+          1,
+          5,
+          null,
+          null,
+          1,
+          2,
+          null,
+          null,
+          1,
+          null,
+          1,
+          39,
+          null
+        ]
+      },
+      "/home/adewunmi97/documents/rails_projects/Distributed_Task_System/app/services/tasks/creation_service.rb": {
+        "lines": [
+          null,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/home/adewunmi97/documents/rails_projects/Distributed_Task_System/app/controllers/application_controller.rb": {
+        "lines": [
+          0,
+          0
+        ],
+        "branches": {}
+      },
+      "/home/adewunmi97/documents/rails_projects/Distributed_Task_System/app/jobs/application_job.rb": {
+        "lines": [
+          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          0
+        ],
+        "branches": {}
+      },
+      "/home/adewunmi97/documents/rails_projects/Distributed_Task_System/app/mailers/application_mailer.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {}
+      }
+    },
+    "timestamp": 1768235749
+  }
+}
